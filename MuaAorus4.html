@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/MuaHang.css">
+    <title>Laptop Gaming Cao Cấp</title>
+</head>
+<body>
+    <header>
+        <div class="inner-header container">
+            <a href="#" id="logo">Logo</a>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Bản Tin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div style="margin-left: 5%; margin-right: 5%;">
+        <div class="menuDau"><h2>Aorus 15X(Laptop) 2023</h2></div>
+        <div style="display: flex;">
+            <div > 
+                <img class="preview" src="images/Aorus3.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+                <br>
+                <img class="preview" src="images/Aorus3x1.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+                <br>
+                <img class="preview" src="images/Aorus3x2.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+                <br>
+                <img class="preview" src="images/Aorus3x3.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+                <br>
+                <img class="preview" src="images/Aorus3x4.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+                <br>
+                <img class="preview" src="images/Aorus3x5.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+            </div>
+            <div id="image"></div>
+            <div style="margin-left: 20px;">
+                <div style="display: flex;">
+                    <div style="font-size: 25px; margin-right: 135px;"><strong style="margin-right: 30px; color: red;">70.000.000đ</strong><strike style="color: #00000040;">89.999.000đ</strike></div>
+                    <div style="font-size: 18px; color: red;"><strong>Bảo hành 24 tháng chính hãng</strong></div>
+                </div>
+                <div>
+                    <div class="tts1"><strong>Thông tin sản phẩm: </strong></div>
+                    <div class="tts1"><strong>Brand: </strong>Gigabyte</div>
+                    <div class="tts1"><strong>Model Name: </strong>Aorus 15X 2023</div>
+                    <div class="tts1"><strong>Screen Size: </strong>15 Inches</div>
+                    <div class="tts1"><strong>Color: </strong>Black</div>
+                    <div class="tts1"><strong>CPU Model: </strong>Intel Core i9 13900HX</div>
+                    <div class="tts1"><strong>RAM: </strong>16GB</div>
+                    <div class="tts1"><strong>Operating System: </strong>Windows 11 Home</div>
+                    <div class="tts1"><strong>VGA: </strong>NVIDIA GeForce RTX 4070</div>
+                    <div class="tts1"><strong>CPU Speed: </strong>2.2 GHz</div>
+                    <div style="margin-top: 115px;"><a href="MuaSanPham.html" class="ThemGioHang" >Mua Sản Phẩm</a></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+        function upDate(previewPic){
+            var src=previewPic.src;
+            var alt=previewPic.alt
+            document.getElementById('image').style.backgroundImage="url("+src+")";
+            document.getElementById('image').innerHTML=alt;
+        }
+        function unDo(){
+            document.getElementById('image').style.backgroundImage="url("+src+")";
+            document.getElementById('image').innerHTML="";
+
+        }
+    </script>
+<script src="jquery/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop()){
+                $('header').addClass('sticky');
+            }else{
+                $('header').removeClass('sticky');  
+            };
+        });
+    });
+</script>
+</body>
+</html>
